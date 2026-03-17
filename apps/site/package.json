@@ -1,0 +1,13 @@
+{
+  "name": "@geney/site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "echo 'static site — no lint'",
+    "types": "echo 'static site — no types'",
+    "fmt:check": "echo 'static site — no fmt'",
+    "test": "echo 'static site — no tests'",
+    "dev": "python3 -m http.server 3000",
+    "clean": "rm -rf node_modules .turbo"
+  }
+}

@@ -1,0 +1,29 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Local env files
+.env
+.env.*
+**/.env.*
+
+# Testing
+coverage
+
+# Turbo
+.turbo
+
+# Build Outputs
+dist
+build
+
+# Debug
+npm-debug.log*
+
+# Misc
+.DS_Store
+*.pem
+
+# Claude Code
+.claude/settings.local.json

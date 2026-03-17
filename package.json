@@ -1,0 +1,26 @@
+{
+  "name": "geney-site",
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.15.9",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build --env-mode=loose",
+    "dev": "turbo run dev --env-mode=loose",
+    "dev:site": "turbo run dev --filter=@geney/site",
+    "test": "turbo run test",
+    "test:unit": "turbo run test:unit",
+    "fmt": "turbo run fmt",
+    "fmt:check": "turbo run fmt:check",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "check": "turbo run check",
+    "types": "turbo run types",
+    "clean": "turbo run clean && rm -rf node_modules .turbo"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.6",
+    "turbo": "^2.5.8"
+  }
+}

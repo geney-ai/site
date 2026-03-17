@@ -1,0 +1,60 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": ["dist/**", "build/**"],
+      "outputLogs": "new-only"
+    },
+    "fmt": {
+      "dependsOn": ["^fmt"]
+    },
+    "fmt:check": {
+      "dependsOn": ["^fmt:check"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "lint:fix": {
+      "dependsOn": ["^lint:fix"]
+    },
+    "check": {
+      "dependsOn": ["^check"]
+    },
+    "types": {
+      "dependsOn": ["^build"]
+    },
+    "clean": {
+      "cache": true
+    },
+    "install": {
+      "cache": true
+    },
+    "check-types": {
+      "dependsOn": ["^check-types"]
+    },
+    "setup": {
+      "cache": false
+    },
+    "test": {
+      "cache": false,
+      "persistent": true
+    },
+    "test:unit": {
+      "cache": false
+    },
+    "test:integration": {
+      "cache": false
+    },
+    "test:external": {
+      "cache": false
+    },
+    "dev": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

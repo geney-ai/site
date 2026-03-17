@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geney — Design and plan molecular cloning workflows</title>
+    <meta name="description" content="A local-first desktop tool for designing molecular cloning workflows. Import plasmids, simulate restriction digests and ligations, and plan multi-step assembly procedures.">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="public/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Geney — Design and plan molecular cloning workflows">
+    <meta property="og:description" content="A local-first desktop tool for designing molecular cloning workflows. Import plasmids, simulate restriction digests and ligations, and plan multi-step assembly procedures.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav>
+        <div class="container">
+            <a href="/" class="nav-logo">
+                <img src="public/favicon.svg" alt="" class="logo-icon" width="28" height="28">
+                geney
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                local-first &middot; open research tooling
+            </div>
+            <h1>Design cloning workflows <span class="gradient">with confidence.</span></h1>
+            <p class="hero-description">
+                Geney is a desktop app for planning molecular cloning procedures.
+                Import plasmids, simulate digests and ligations, and verify your
+                assembly strategy before you touch a pipette.
+                No cloud. No subscriptions. Just your sequences on your machine.
+            </p>
+            <div class="hero-actions">
+                <a href="#download" class="btn btn-primary">
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v9M4 8l4 4 4-4"/><path d="M2 13h12"/></svg>
+                    Download
+                </a>
+                <a href="#how-it-works" class="btn btn-outline">How it works</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <span class="section-label">Features</span>
+            <h2 class="section-title">Built for the bench, not the boardroom.</h2>
+            <p class="section-description">
+                Every feature is designed around the molecular cloning workflow
+                researchers actually use &mdash; from plasmid management to multi-step
+                assembly planning.
+            </p>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8M16 17H8M10 9H8"/></svg>
+                    </div>
+                    <h3>GenBank import</h3>
+                    <p>Import plasmids from GenBank or SnapGene files. Features, annotations, and topology are preserved and visualized instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                    </div>
+                    <h3>Digest simulation</h3>
+                    <p>Pick restriction enzymes and simulate digests in silico. See exactly where cuts land, what fragments you get, and which overhangs result.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                    </div>
+                    <h3>Ligation verification</h3>
+                    <p>Check overhang compatibility before you ligate. Geney verifies that your fragments assemble correctly and shows the resulting construct.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    </div>
+                    <h3>Procedure builder</h3>
+                    <p>Chain digests and ligations into multi-step procedures with a visual node editor. Validate the entire pipeline before running it.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M8 7v10M12 7v10M16 7v10"/></svg>
+                    </div>
+                    <h3>Local-first</h3>
+                    <p>Everything runs on your machine. Your sequences never leave your disk. No accounts, no cloud, no data sharing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    </div>
+                    <h3>Content-addressed storage</h3>
+                    <p>Sequences, features, and constructs are identified by their content. Import the same plasmid twice and it deduplicates automatically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <span class="section-label">How it works</span>
+            <h2 class="section-title">From plasmid to procedure in minutes.</h2>
+            <p class="section-description">
+                Import your constructs, design your cloning strategy, and validate
+                it computationally before heading to the bench.
+            </p>
+            <div class="steps">
+                <div class="step">
+                    <h3>Build your library</h3>
+                    <p>Import plasmids from GenBank files or browse the Addgene catalog. Organize constructs into workspaces with drag-and-drop folders.</p>
+                </div>
+                <div class="step">
+                    <h3>Design your procedure</h3>
+                    <p>Add digest and ligation steps to a visual workflow. Select enzymes, wire fragments between operations, and see outputs update in real time.</p>
+                </div>
+                <div class="step">
+                    <h3>Validate &amp; export</h3>
+                    <p>Run the full procedure to verify every step produces valid products. Inspect resulting constructs with an interactive sequence viewer, then export as GenBank.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section class="downloads" id="download">
+        <div class="container">
+            <span class="section-label">Download</span>
+            <h2 class="section-title">Get Geney.</h2>
+            <p class="section-description">
+                Desktop app for macOS. Free for academic research.
+            </p>
+            <div class="download-grid">
+                <div class="download-card">
+                    <div class="platform-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    </div>
+                    <h3>macOS</h3>
+                    <p class="arch">Apple Silicon &amp; Intel</p>
+                    <a href="https://github.com/geney-ai/geney/releases/latest" class="btn btn-primary btn-sm">Download</a>
+                </div>
+                <div class="download-card">
+                    <div class="platform-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.548l7.065-0.964 0.003 6.812-7.061 0.04L3 5.548zm7.061 6.628l0.006 6.82-7.061-0.972V12.14l7.055 0.036zm0.855-7.725L20.997 3v8.396l-10.081 0.08V4.451zm10.084 7.741L20.999 21l-10.081-1.423-0.014-6.832 10.084 0.447z"/></svg>
+                    </div>
+                    <h3>Windows</h3>
+                    <p class="arch">x86_64</p>
+                    <a href="https://github.com/geney-ai/geney/releases/latest" class="btn btn-primary btn-sm">Download</a>
+                </div>
+                <div class="download-card">
+                    <div class="platform-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.504 0c-.155 0-.315.008-.48.021-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a7.108 7.108 0 0 0 .067.57c.008.045.015.088.022.163a7.558 7.558 0 0 0 .206 1.168c.156.586.385 1.129.729 1.545.344.417.816.682 1.404.682.369 0 .706-.116.982-.29.276-.175.5-.399.709-.645.209-.245.391-.509.573-.78.182-.272.353-.538.549-.794.196-.255.421-.497.712-.689.291-.192.622-.312.986-.321.072-.002.142-.002.21.003.372.025.715.163 1.01.374.296.212.531.473.74.746.209.273.39.556.569.828.179.272.361.534.569.767.208.233.44.437.725.601.285.165.624.261.991.261.372 0 .702-.126.99-.325.288-.199.513-.453.694-.733.181-.28.313-.584.416-.893a7.2 7.2 0 0 0 .218-.898 7.558 7.558 0 0 0 .098-.562l.024-.166a7.108 7.108 0 0 0 .032-.371c.042-.823-.11-1.674-.389-2.503-.588-1.747-1.819-3.44-2.684-4.496-.73-1.057-.954-1.91-1.03-3.002-.065-1.478 1.058-5.97-3.17-6.298-.16-.013-.32-.021-.48-.021z"/></svg>
+                    </div>
+                    <h3>Linux</h3>
+                    <p class="arch">x86_64 / AppImage</p>
+                    <a href="https://github.com/geney-ai/geney/releases/latest" class="btn btn-primary btn-sm">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <span class="footer-left">&copy; 2025 Geney. Built for research.</span>
+            <ul class="footer-links">
+                <li><a href="https://github.com/geney-ai/site" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
